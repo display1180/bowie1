@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bowie1/static/css/main.6457aae0.css",
-    "main.js": "/bowie1/static/js/main.77c5d873.js",
+    "main.js": "/bowie1/static/js/main.b14b6f00.js",
     "index.html": "/bowie1/index.html",
     "main.6457aae0.css.map": "/bowie1/static/css/main.6457aae0.css.map",
-    "main.77c5d873.js.map": "/bowie1/static/js/main.77c5d873.js.map"
+    "main.b14b6f00.js.map": "/bowie1/static/js/main.b14b6f00.js.map"
   },
   "entrypoints": [
     "static/css/main.6457aae0.css",
-    "static/js/main.77c5d873.js"
+    "static/js/main.b14b6f00.js"
   ]
 }
