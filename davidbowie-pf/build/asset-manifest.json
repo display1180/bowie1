@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bowie1/static/css/main.183f60f7.css",
+    "main.js": "/bowie1/static/js/main.9172a368.js",
+    "index.html": "/bowie1/index.html",
+    "main.183f60f7.css.map": "/bowie1/static/css/main.183f60f7.css.map",
+    "main.9172a368.js.map": "/bowie1/static/js/main.9172a368.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.183f60f7.css",
+    "static/js/main.9172a368.js"
+  ]
+}

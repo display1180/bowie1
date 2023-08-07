@@ -1,0 +1,18 @@
+#banner {
+	width: 100%;
+	background: #fff;
+	color: #111;
+	padding: 200px 15vw 140px;
+
+	article {
+		display: flex;
+		align-items: center;
+		gap: 60px;
+		padding-bottom: 60px;
+		font-size: 24px;
+
+		h2 {
+			padding-bottom: 20px;
+		}
+	}
+}

@@ -1,0 +1,98 @@
+#vids {
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	.swiper-wrapper {
+		transition-timing-function: linear;
+	}
+
+	.swiper {
+		height: 100%;
+		padding: 12vw 0px;
+
+		.controls {
+			position: absolute;
+			bottom: 50px;
+			left: 60px;
+			display: flex;
+			gap: 30px;
+			font-size: 24px;
+			color: #fff;
+			z-index: 5;
+
+			svg {
+				cursor: pointer;
+				opacity: 0.4;
+				transform: scale(1);
+				transition: opacity 0.5s, transform 0.5s;
+
+				&.on {
+					opacity: 1;
+					transform: scale(1.8);
+				}
+			}
+		}
+
+		.swiper-slide {
+			width: 50vw;
+
+			.inner {
+				width: 100%;
+				height: 100%;
+				// background: #fff;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-content: center;
+				color: #333;
+				// padding: 30px;
+				transform: scale(1.8);
+				// opacity: 0.5;
+				transition: opacity 0.5s, transform 0.5s;
+				transform-origin: center center;
+				// transition-delay: 2.5s;
+
+				.pic {
+					width: 100%;
+					// height: 40%;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+
+				h2 {
+					font: normal 40px/1;
+					color: #111;
+					margin-top: 15px;
+				}
+				p {
+					font: 14px/1.3;
+					color: #bbb;
+					margin-top: 30px;
+				}
+			}
+		}
+
+		.swiper-slide-active {
+			z-index: 13;
+
+			.inner {
+				opacity: 1;
+				transform: scale(1.8);
+				z-index: 13;
+				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	#vids {
+		.swiper {
+			padding: 12vw 50px;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+$tablet: 1199px;
+$mobile: 759px;
+
+@import 'common/reset';
+@import 'common/header';
+@import 'common/footer';
+@import 'common/layout';
+@import 'common/modal';
+@import 'common/menu';
+
+@import 'main/visual';
+@import 'main/news';
+@import 'main/vids';
+@import 'main/pics';
+@import 'main/banner';
+@import 'main/btns';
+
+@import 'sub/department';
+@import 'sub/community';
+@import 'sub/gallery';
+@import 'sub/youtube';
+@import 'sub/contact';
+@import 'sub/member';
+
+/* transition */
+.slide-in {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background: #111;
+	transform-origin: left;
+	z-index: 100000;
+}
+
+.slide-in-text {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) !important;
+	color: #fff;
+	opacity: 0;
+	z-index: 1000000000;
+	pointer-events: none;
+	text-transform: uppercase;
+	font-size: 100px;
+}
+
+.slide-out {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background: #111;
+	transform-origin: right;
+	z-index: 1000000;
+}

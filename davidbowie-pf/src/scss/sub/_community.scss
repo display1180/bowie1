@@ -1,0 +1,121 @@
+.Community {
+	> .inner {
+		.inputBox {
+			width: 100%;
+			padding: 50px;
+			margin-bottom: 50px;
+
+			input[type='text'],
+			textarea {
+				width: 100%;
+				padding: 8px 10px;
+				border: none;
+				resize: none;
+				margin-bottom: 10px;
+				background: #222;
+				color: #fff;
+				font-size: 20px;
+			}
+
+			.btnSet {
+				button {
+					width: 300px;
+					height: 60px;
+					display: inline-block;
+					border: none;
+					background: #000;
+					margin-right: 20px;
+					color: #fff;
+					font-size: 20px;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.showBox {
+			width: 100%;
+			padding: 50px;
+
+			article {
+				padding: 30px;
+				margin-bottom: 40px;
+				display: flex;
+				justify-content: space-between;
+				align-content: center;
+				flex-wrap: wrap;
+				background: #222;
+
+				.txt {
+					width: 70%;
+					h2 {
+						margin-bottom: 10px;
+					}
+
+					input,
+					textarea {
+						width: 100%;
+						padding: 8px 10px;
+						margin-bottom: 20px;
+						resize: none;
+						outline: none;
+						background: #000;
+					}
+				}
+				.btnSet {
+					width: 10%;
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					gap: 20px;
+
+					button {
+						border: none;
+						background: transparent;
+						cursor: pointer;
+						padding: 5px 10px;
+						background: #000;
+						&:nth-of-type(1) {
+							color: orange;
+						}
+						&:nth-of-type(2) {
+							color: orangered;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.Community {
+		> .inner {
+			.inputBox {
+				input[type='text'],
+				textarea {
+					width: 100%;
+				}
+				.btnSet {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+
+					button {
+						width: 47%;
+						margin-right: 0;
+					}
+				}
+			}
+
+			.showBox {
+				article {
+					.txt,
+					.btnSet {
+						width: 100%;
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+}
